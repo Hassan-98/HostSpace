@@ -6,6 +6,7 @@
   transition: all 0.5s ease
 }
 
+/**************BroCoders**************| Root Element Styles |**************Team**************/
 :root{
   --mc1:#4D1D85;
   --mc2:#d35400;
@@ -13,6 +14,14 @@
   --nav: rgba(17, 0, 37, 0.9);
 }
 
+/**************BroCoders**************| Selection Style |**************Team**************/
+::selection{
+  background: var(--mc2);
+  color: #fff
+}
+
+
+/**************BroCoders**************| Loader Styles |**************Team**************/
 .loader{
   width: 100%;
   height: 100vh;
@@ -74,6 +83,7 @@
   }
 }
 
+/**************BroCoders**************| Colors Settings Styles |**************Team**************/
 .settings{
   position: fixed;
   z-index: 2;
@@ -151,6 +161,7 @@
   background: #505160;
 }
 
+/**************BroCoders**************| Header - Nav Styles |**************Team**************/
 header{
   background: url(../images/header.jpg) fixed no-repeat;
   background-size: cover;
@@ -179,7 +190,7 @@ header .navbar{
 
 @media (max-width: 576px){
   header .navbar{
-    background: rgba(17, 0, 37, 0.9)!important;
+    background: var(--nav)!important;
   }
 }
 
@@ -233,6 +244,7 @@ header nav .divider{
   font-size: 18px
 }
 
+/**************BroCoders**************| Header - Header Styles |**************Team**************/
 header .header{
   position: relative;
   top: 50%;
@@ -363,7 +375,7 @@ header .header div button:hover{
   }
 }
 
-/****** How To Section *******/
+/**************BroCoders**************| HowTo Section Styles |**************Team**************/
 
 .howTo{
   padding: 100px 0;
@@ -383,7 +395,7 @@ header .header div button:hover{
   height: 180px;
   margin: 20px auto 40px
 }
-@media (max-width: 576px){
+@media (max-width: 992px){
   .howTo .part .img{
     margin: 20px auto 25px
   }
@@ -424,7 +436,7 @@ header .header div button:hover{
   text-shadow: 0 0 1px rgba(0,0,0,.01);
 }
 
-@media (max-width: 576px){
+@media (max-width: 992px){
   .howTo .part p{
     margin-bottom: 50px;
   }
@@ -447,7 +459,7 @@ header .header div button:hover{
 }
 
 
-/*************| Services Section |***********/
+/**************BroCoders**************| Services Section Styles |**************Team**************/
 
 .services{
   background: url('../images/sec2.jpg') fixed no-repeat;
@@ -476,7 +488,7 @@ header .header div button:hover{
   padding-right: 30px;
   border: solid 2px transparent;
 }
-@media (max-width: 576px){
+@media (max-width: 992px){
   .services .spart{
     margin-bottom: 50px;
   }
@@ -531,4 +543,420 @@ header .header div button:hover{
 .services .spart button:hover{
   background: var(--mc2);
   color: #fff
+}
+
+  /***************BroCoders**************| packs styles |**************Team***************/
+.packs{
+  background-color: #fff;
+  padding: 80px 60px;
+  
+}
+
+@media(max-width:992px){
+  .packs{
+      padding: 80px 45px !important   
+  }    
+}
+@media(max-width:576px){
+  .packs{
+      padding: 80px 30px !important    
+  }    
+}
+
+.packs .container .price {
+  padding: 0px;
+  border: 1px solid #ccc;
+  text-align: center;
+  overflow: hidden
+}
+
+@media(max-width:990px){
+  .packs .container .price {
+      border-radius: 20px
+  }
+}
+@media(max-width:574px){
+  .packs .container .price:not(:first-of-type){
+      margin-top: 30px     
+  }   
+}
+
+.packs .container .price:last-of-type{
+  border-top-right-radius: 20px
+}
+.packs .container .price:first-of-type{
+  border-top-left-radius: 20px
+}
+.packs .container .price h1{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color:var(--mc1);
+  padding: 40px 30px;
+  border-top: 1px solid #ccc;
+}
+.packs .container .price h1:hover{
+  color: var(--mc2)
+}
+.packs .container .price:last-of-type h1{
+  border-right: 1px solid #ccc;
+}
+.packs .container .price:first-of-type h1{
+  border-left: 1px solid #ccc;
+}
+.packs .container .price p{
+  padding: 30px 0px;
+  font-size: 36px;
+  font-weight: 700;
+  color:var(--mc1)
+}
+.packs .container .price p span{
+  font-size: 17px;
+  font-weight: 600;
+  color: #1f1d22
+}
+.packs .container .price span:not(:first-child){
+  display: block;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F1D22
+}
+.packs .container .price span i{
+  color: var(--mc2);
+  margin-right: 10px;
+  font-size: 22px;
+  display: inline-block
+}
+.packs .container .price button{
+  display: block;
+  margin: 25px auto;
+  padding: 15px 26px;
+  border-radius: 15px;
+  background-color: var(--mc2);
+  border:none;
+  color: #111;
+  font-weight: 900;
+  font-size: 17px;
+  cursor:pointer;
+  outline: none
+}
+.packs .container .price button:hover{
+  background-color: var(--mc1);
+  color: #fff
+}
+
+
+/***************BroCoders**************| about-us styles |**************Team***************/
+
+.about-us{
+  background-color: #F6F8FB
+}
+.about-us .container .us1{
+  margin-top: -25px;
+}
+
+@media(max-width:990px){
+  .about-us .container .us1{
+      display: none
+  }    
+}
+
+.about-us .container .us{
+    padding: 90px 20px
+}
+
+@media(max-width:990px){
+  .about-us .container .us{
+    text-align: center
+  } 
+}
+
+@media(max-width:350px){
+  .about-us .container .us h1{
+    font-size: 36px;
+    font-weight: 800
+  }   
+}
+
+
+.about-us .container .us p{
+  padding: 40px 0px 20px;
+  color:#656565;
+  font-size: 15px
+}
+.about-us .container .us div {
+  overflow: hidden;
+  width:100%
+}
+.about-us .container .us div div{
+  display: block;
+  float:left;
+  width: 21%;
+  margin-left: 4%;
+  text-align: center
+}
+.about-us .container .us div div p{
+  padding: 5px 0px;
+  font-weight: bold;
+  color:#656565;
+  font-size: 16px
+}
+.about-us .container .us div div img{
+  width:65%;
+  height: 100px
+}
+
+
+          /***************BroCoders**************| build styles |**************Team***************/
+
+.build {
+  padding: 44px 25px 20px 25px;
+  background-color: var(--overlay);
+  margin-top: -20px;
+}
+
+@media(max-width:990px){
+  .build{
+    text-align: center
+  }    
+  .build .container button{
+    margin: 0 auto
+  }    
+}
+
+.build .container h1{
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff
+}
+
+@media(max-width:768px){
+  .build .container h1{
+    font-size: 25px;
+  }
+}
+
+@media(max-width:450px){
+  .build .container h1{
+    font-size: 20px;
+  }
+}
+
+.build .container p{
+  font-size: 36px;
+  font-weight: 700;
+  color:var(--mc2)
+}
+
+@media(max-width:768px){
+  .build .container p{
+    font-size: 30px;
+  }
+}
+
+@media(max-width:450px){
+  .build .container p{
+    font-size: 25px;
+  }
+}
+
+.build .container p span{
+  font-size: 17px;
+  font-weight: 600;
+  color:var(--mc2) 
+}
+
+@media(max-width:768px){
+  .build .container p span{
+    font-size: 15px;
+  }
+}
+
+@media(max-width:450px){
+  .build .container p span{
+    font-size: 15px;
+  }
+}
+
+.build .container button{
+  display: block;
+  padding: 18px 32px;
+  border-radius: 15px;
+  background-color: var(--mc2);
+  border:none;
+  color: #111;
+  font-weight: 900;
+  font-size: 17px;
+  cursor:pointer;
+  outline: none
+}
+.build .container button:hover{
+  background-color: var(--mc1);
+  color: #fff
+}
+
+
+        /***************BroCoders**************| footer styles |**************Team***************/
+
+footer{
+  padding: 75px 10px;
+  background-color: var(--mc1);
+}
+footer .container .HostSpace h1{
+  font-weight: 600;
+  font-size: 47px;
+  color: #fff
+}
+footer .container .HostSpace h1 span{
+  color: var(--mc2)
+}
+footer .container .HostSpace p:first-of-type{
+  font-size: 11px;
+  color: #fff;
+}
+footer .container .HostSpace p:first-of-type span{
+  color: var(--mc2)
+}
+footer .container .HostSpace p:nth-of-type(2){
+  color:#fff;
+  font-size: 15px;
+  margin-top: 33px
+}
+footer .container .HostSpace .form form{
+  margin-top: 45px
+}
+footer .container .HostSpace .form form input{
+  padding: 15px 25px;
+  background-color: var(--mc2);
+  width: 48.5%;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+@media(max-width:768px){
+  footer .container .HostSpace .form form input{
+      width: 100%;
+      margin-top: 20px;
+      background-color: var(--mc2);
+  } 
+}
+@media(max-width:1200px){
+  footer .container .HostSpace .form form input{
+      width: 100%;
+      margin-top: 20px;
+  } 
+  }
+  footer .container .HostSpace .form form ::placeholder{
+      font-size: 14px;
+      color: #fff
+  }
+  footer .container .HostSpace .form form input[type="email"]{
+      margin-left: 10px
+  }
+  @media(max-width:1200px){
+      footer .container .HostSpace .form form input[type="email"]{
+          margin-left: 0px !important
+  }
+  }
+  @media(max-width:768px){
+      footer .container .HostSpace .form form input[type="email"]{
+          margin-left: 0px !important
+  }
+}
+
+footer .container .HostSpace .form form textarea{
+  background-color: var(--mc2);
+  width:100%;
+  height: 30%;
+  box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+  border-radius: 5px;
+  margin-top: 15px;
+  border:none;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff
+}
+footer .container .HostSpace .form form input[type="submit"]{
+  padding: 12px 25px;
+  width: 25%;
+  border-radius: 8px;
+  background-color: var(--mc2);
+  border:none;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: 15px;
+  outline: none
+}
+footer .container .HostSpace .form form input[type="submit"]:hover{
+  transform: translateY(5px);
+  background-color: #fff;
+  color: var(--mc2);
+}
+
+@media(max-width:1200px){
+  footer .container .HostSpace .form form input[type="submit"]{
+      width: 100% !important;
+      margin-bottom: 30px;
+      margin-top: 20px !important
+  }
+}
+@media(max-width:768px){
+  footer .container .HostSpace .form form input[type="submit"]{
+      width: 100% !important;
+      margin-bottom: 30px;
+      margin-top: 20px !important
+  }
+}
+@media(max-width:574px){
+  footer .container .Options{
+      text-align: center    
+  }
+  footer .container .Options h2{
+      font-size: 31px !important    
+  }
+  footer .container .Options h2:first-of-type{
+      margin-top: 15px !important    
+  }    
+  footer .container .Options h2.heading1{
+      margin-bottom: 25px       
+      }    
+  footer .container .Options h2.head{
+      margin-top: 35px;
+      margin-bottom: 25px
+  }    
+  footer .container .Options h2.heading2{
+      margin-top: 35px !important;
+      margin-bottom: 25px
+  }    
+  footer .container .Options span{
+      font-size: 18px !important    
+  }    
+}
+
+footer .container .Options h2{
+    font-weight:700;
+    font-size: 20px;
+    color: var(--mc2);
+    margin-bottom: 37px
+}
+footer .container .Options h2.heading1{
+    margin-top: 48px
+}
+footer .container .Options h2.heading2{
+    margin-top: 88px
+
+}
+footer .container .Options span{
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 15px
+}
+footer .container .Options span:hover{
+    color: var(--mc2);
+    cursor: pointer
 }
