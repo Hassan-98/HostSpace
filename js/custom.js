@@ -1,12 +1,12 @@
 // PreLoader Script
 $(function(){
-    setTimeout(function(){$(".loader").fadeOut(800)},0)
+    setTimeout(function(){$(".loader").fadeOut(800)},2000)
 });
 
 // Navbar Scrolling Script
 $(function(){
     $(window).scroll(function(){
-        if(document.documentElement.scrollTop != 0){
+        if( $(window).scrollTop() != 0){
             $("nav").css({
                 "background":"var(--nav)",
                 "padding":"0px 30px",
@@ -68,4 +68,60 @@ $(".green").click(function(){
         "--nav":"#2d981ef2"
     });
     $("header .header div input, header .header div select").css("box-shadow","1px 1px 10px rgba(0, 0, 0, 0.6)");
+});
+
+// Services Page Tabs
+$(".buttons button").click(function(){
+    $(".buttons button").removeClass("active");
+    $(this).addClass("active");
+
+    var heading = $(".text h2"),
+        tabImg = $(".image"),
+        tabText = $(".text");
+
+    if( $(this).attr("class") == "hosting active" ){
+        heading.text("Choose your hosting");
+        tabImg.addClass("active");
+        tabText.addClass("active");
+        setTimeout(function(){
+            tabImg.removeClass("active");
+            tabText.removeClass("active");
+        },500);
+    }
+    else if ( $(this).attr("class") == "domain active" ){
+        heading.text("Choose your domain");
+        tabImg.addClass("active");
+        tabText.addClass("active");
+        setTimeout(function(){
+            tabImg.removeClass("active");
+            tabText.removeClass("active");
+        },500);
+    }
+    else if ( $(this).attr("class") == "cloud active" ){
+        heading.text("Cloud Computing");
+        tabImg.addClass("active");
+        tabText.addClass("active");
+        setTimeout(function(){
+            tabImg.removeClass("active");
+            tabText.removeClass("active");
+        },500);
+    }
+    else if ( $(this).attr("class") == "resellers active" ){
+        heading.text("Resellers");
+        tabImg.addClass("active");
+        tabText.addClass("active");
+        setTimeout(function(){
+            tabImg.removeClass("active");
+            tabText.removeClass("active");
+        },500);
+    }
+    else if ( $(this).attr("class") == "storing active" ){
+        heading.text("Storing Resources");
+        tabImg.addClass("active");
+        tabText.addClass("active");
+        setTimeout(function(){
+            tabImg.removeClass("active");
+            tabText.removeClass("active");
+        },500);
+    }
 });

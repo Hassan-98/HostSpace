@@ -6,6 +6,7 @@
   transition: all 0.5s ease
 }
 
+
 /**************BroCoders**************| Root Element Styles |**************Team**************/
 :root{
   --mc1:#4D1D85;
@@ -548,7 +549,7 @@ header .header div button:hover{
   /***************BroCoders**************| packs styles |**************Team***************/
 .packs{
   background-color: #fff;
-  padding: 80px 60px;
+  padding: 130px 60px;
   
 }
 
@@ -962,9 +963,8 @@ footer .container .Options span:hover{
 }
 
 
-/**************************************| About Us Page |****************************************/
 
-/**************BroCoders**************| Header - Header Styles |**************Team**************/
+/**************BroCoders**************| Header - Header Styles For Other Pages |**************Team**************/
 header.otherPages{
   background: url(../images/header.jpg) fixed no-repeat;
   background-size: cover;
@@ -1131,6 +1131,12 @@ header.otherPages .header p span{
   }
 }
 
+/**************BroCoders**************| END Header - Header Styles For Other Pages |**************Team**************/
+
+
+
+/**************************************| About Us Page |****************************************/
+
 
 /**************************************| End About Us Page |****************************************/
 
@@ -1146,6 +1152,261 @@ header.otherPages .header p span{
 
 /**************************************| Start Services Page |****************************************/
 
+/**************BroCoders**************| Services Section Styles |**************Team**************/
+
+.services-page{
+  background: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.services-page h1{
+  color: #000;
+  margin-bottom: 80px;
+  font-weight: 900;
+  font-size: 36px
+}
+
+.services-page .spart{    
+  width: 100%;
+  background: #f4f7f8;
+  border-radius: 12px;
+  padding-top: 50px;
+  padding-bottom: 66px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: solid 2px transparent;
+  margin-bottom: 80px;
+}
+@media (max-width: 992px){
+  .services-page .spart{
+    margin-bottom: 50px;
+  }
+}
+
+.services-page .spart:hover{
+  border-color: var(--mc2);
+}
+.services-page .spart:hover svg{
+  color: var(--mc2);
+}
+
+.services-page .part svg{
+  width: 80px;
+  height: 80px;
+  margin: 20px auto 40px
+}
+
+.services-page .spart h4{
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1f1d22;
+}
+
+.services-page .spart p{
+  font-size: 15px;
+  line-height: 1.8666;
+  font-weight: 400;
+  color: #656566;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  margin: 25px 0 30px;
+}
+
+.services-page .spart button{
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: #656566;
+  line-height: 63px;
+  background: var(--mc1);
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 0px 30px;
+  cursor: pointer;
+  margin-bottom: -90px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services-page .spart button:hover{
+  background: var(--mc2);
+}
+
+/**************BroCoders**************| Tabs Section Styles |**************Team**************/
+.tabs{
+  background: url(../images/services.jpg) fixed no-repeat bottom;
+  background-size: cover;
+  text-align: center;
+}
+.tabs .overlay{
+  background: var(--overlay);
+  width: 100%;
+  height: 100%;
+  padding: 120px 0
+}
+
+.tabs .buttons{
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button{
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--mc1);
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.7);
+  border-radius: 15px;
+  font-weight: 900;
+  border: 2px solid var(--mc2);
+}
+
+@media (max-width: 576px){
+  .tabs button{
+    font-size: 14px
+  }
+}
+
+.tabs button.active{
+  background: var(--mc2);
+}
+.tabs button:hover{
+  background: var(--mc2);
+}
+
+.tabs .tabcontent{
+  padding: 50px;
+  padding-top: 70px;
+  margin-top: 21px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  text-align: left;
+}
+@media (max-width: 576px){
+  .tabs .tabcontent{
+    padding: 40px 20px;
+    text-align: center!important
+  }
+
+}
+.tabs .text.active, .tabs .image.active{
+  animation: fadeIn 0.8s ease;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.tabs .text h2{
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 36px;
+  color: #1f1d22;
+  line-height: 1.2;
+}
+@media (max-width: 576px){
+  .tabs .text h2{
+    font-size: 25px;
+  }
+}
+
+.tabs .text p{
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: #656566;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+@media (max-width: 576px){
+  .tabs .text p{
+    font-size: 14px;
+  }
+}
+
+/**************BroCoders**************| Support Section Styles |**************Team**************/
+.support{
+  background: url(../images/support.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.support .overlay{
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 100%;
+  padding: 120px 0
+}
+
+@media (max-width: 992px){
+  .support .overlay{
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.support h2{
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 38px;
+  color: #1f1d22;
+  line-height: 1.2;
+}
+.support h2 span{
+  font-size: 72px;
+  margin-right: 5px;
+  color: var(--mc2);
+}
+
+@media (max-width: 576px){
+  .support h2{
+    font-size: 30px;
+  }
+  .support h2 span{
+    font-size: 40px;
+  }
+}
+.support p{
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: #656566;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+.support h3{
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--mc2);
+  margin-top: 20px;
+}
+.support h3 span{
+  font-size: 48px;
+  margin: 15px 0 15px 3px
+}
+
+.support button{
+  padding: 15px 40px;
+  border-radius: 12px;
+  background: var(--mc2);
+  text-align: center;
+  margin-top: 22px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+  font-weight: bold;
+  color: #fff
+}
+.support button:hover{
+  background: var(--mc1);
+}
 
 /**************************************| End Services Page |****************************************/
 
@@ -1154,5 +1415,222 @@ header.otherPages .header p span{
 
 /**************************************| Start News Page |****************************************/
 
+  /***************BroCoders**************| NewsContent styles |**************Team***************/
+.NewsContent{
+  padding: 120px 0;
+}
+.news{
+  margin: 0 0 80px;
+}
+
+.news .newsImg{
+  position: relative;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+@media(max-width:576px){
+  .news .newsImg{
+    height: 280px;
+  }
+}
+
+.news .newsImg Img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.news .newsImg div{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 15px;
+  background: var(--mc1);
+  padding: 15px;
+  text-align: center;
+}
+.news .newsImg div p{
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--mc2);
+  line-height: 0.75;
+  margin-bottom: 5px;
+}
+
+@media(max-width:576px){
+  .news .newsImg div p{
+    font-size: 30px;
+  }
+}
+
+.news .newsImg div span{
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 0.75;
+  margin-top: 11px;
+}
+
+.news h2{
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 900;
+  color: #1f1d22;
+  line-height: 1.2;
+  margin-bottom: 8px
+}
+.news h2:hover{
+  color: var(--mc2);
+}
+@media(max-width:576px){
+  .news h2{
+    font-size: 24px;
+  }
+}
+
+.news .titles{
+  font-size: 12px;
+  color: #b5b5b5;
+  font-weight: 600;
+  margin-bottom: 35px
+}
+.news .titles span{
+  color: var(--mc1);
+  cursor: pointer;
+}
+.news .titles span:hover{
+  color: var(--mc2);
+}
+
+.news > p{
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: #656566;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+@media(max-width:576px){
+  .news > p{
+    font-size: 14px;
+  }
+}
+
+.bar span{
+  font-size: 18px;
+  font-weight: 900;
+  color: #1f1d22;
+  padding: 4px;
+  cursor: pointer;
+}
+.bar span:hover{
+  color: var(--mc2);
+}
+
+  /***************BroCoders**************| Sidebar styles |**************Team***************/
+
+.sidebar input{
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  background: #F3F5F9;
+  padding: 10px 15px;
+  margin-bottom: 30px
+}
+.sidebar button{
+  width: 20%;
+  border: none;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  cursor: pointer;
+  background: var(--overlay);
+  padding: 10px 15px
+}
+
+.sideList{
+  padding: 25px 0
+}
+
+.sideList h3{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f1d22;
+  line-height: 0.75;
+}
+.sideList h3::after{
+  content: "";
+  display: block;
+  width: calc(100% + 20px);
+  height: 3px;
+  background: var(--overlay);
+  margin: 12px 0
+}
+
+.sideList ul{
+  list-style: none;
+}
+.sideList ul li{
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #656566;
+  line-height: 1.2;
+  cursor: pointer;
+  display: flex
+}
+.sideList ul li:before{
+  content: "» ";
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: -6px;
+  font-size: 22px;
+  font-weight: 900;
+  color: #262626;
+}
+.sideList ul li:hover{
+  color: var(--mc2)!important
+}
+.sideList ul li:hover::before{
+  color: var(--mc2)!important
+}
+
+.sidebar .ad{
+  background: url(../images/services.jpg) fixed no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  color: #fff;
+  text-align: center
+}
+.sidebar .ad .overlay{
+  background: var(--overlay);
+  padding: 35px 25px 25px
+}
+.sidebar .ad img{
+  width: 100%;
+  height: 170px;
+}
+
+.sidebar .ad h3{
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 32px;
+}
+
+.sidebar .ad h3 span{
+  font-size: 36px;
+  color: var(--mc2)
+}
+
+.sidebar .ad p{
+  margin-top: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+}
 
 /**************************************| End News Page |****************************************/
