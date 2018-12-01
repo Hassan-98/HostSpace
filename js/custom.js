@@ -1,6 +1,6 @@
 // PreLoader Script
 $(function(){
-    setTimeout(function(){$(".loader").fadeOut(800)},2000)
+    setTimeout(function(){$(".loader").fadeOut(800)},3000)
 });
 
 // Navbar Scrolling Script
